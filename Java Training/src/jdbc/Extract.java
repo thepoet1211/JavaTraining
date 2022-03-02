@@ -1,13 +1,13 @@
 package jdbc;
 import java.sql.*;
 public class Extract {
-	{
+	
 		 public static void main(String args[])
 		 {
 		 try
 		 {
-		 Class.forName("com.mysql.jdbc.Driver");
-		 Connection con =DriverManager.getConnection("Jdbc:mysql:///demodb","root","");
+		 Class.forName("com.mysql.cj.jdbc.Driver");
+		 Connection con =DriverManager.getConnection("Jdbc:mysql:///iiche","root","P@rth$00d");
 		 Statement stmt = con.createStatement();
 		 String query = "select id,name from list";
 		 ResultSet rs = stmt.executeQuery(query);
@@ -22,4 +22,4 @@ public class Extract {
 		 }
 		 }
 		}
-}
+
