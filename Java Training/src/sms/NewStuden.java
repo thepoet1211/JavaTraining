@@ -28,7 +28,8 @@ public class NewStuden {
 
 				Connection con = DriverManager.getConnection("Jdbc:mysql:///vote", "root", "P@rth$00d");
 				Statement stmt = con.createStatement();
-				String query = "insert into voterdetails (Name,RN,Age) values ('" + name + "'," + rollnumber + "," + age + ");";
+				String query = "insert into voterdetails (Name,RN,Age) values ('" + name + "'," + rollnumber + "," + age
+						+ ");";
 
 				int i = stmt.executeUpdate(query);
 				if (i > 0) {
